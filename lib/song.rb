@@ -31,7 +31,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    @@all.find{|x| x.name == name }
+    @@all.find{|x| x.name == name }  #searches all instances of the class to see if a name property matches the name
   end
 
   def self.find_or_create_by_name(name)
